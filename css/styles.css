@@ -1,0 +1,131 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/* Hide Element */
+.hide {
+    display: none !important;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+header {
+    background-color: #314C5E;
+    color: #F5F5F5;
+    text-align: center;
+    border-bottom: 8px solid #40B29D;
+    padding: 20px 30px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header strong a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #EDEBE1;
+}
+
+main {
+    background-color: #314C5E;
+    color: #F5F5F5;
+    border-bottom: 8px solid #40B29D;
+    padding: 30px 30px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+main #questions-box #question-title h3, 
+main #questions-result h3{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 0.3px;
+}
+
+main #questions-box #question-answers .answer, 
+main #questions-result button {
+    background-color: #314C5E;
+    border: 2px solid #EDEBE1;
+    color: #F5F5F5;
+    display: flex;
+    line-height: 40px;
+    margin-bottom: 8px;
+    border-radius: 22px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main #questions-box #question-answers .answer:hover, 
+main #questions-result button:hover {
+    background-color: #EDEBE1;
+    color: #314C5E;
+    font-weight: bold;
+}
+
+main #questions-box #question-answers .answer .letter {
+    background-color: #EDEBE1;
+    color: #314C5E;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main #questions-box #question-answers .correct {
+    background-color: #40B29D;
+    border-color: #40B29D;
+    pointer-events: none;
+}
+
+main #questions-box #question-answers .correct .letter {
+    background-color: #40B29D;
+    color: #F5F5F5;
+}
+
+main #questions-box #question-answers .wrong {
+    background-color: #D92B2B;
+    border-color: #D92B2B;
+    pointer-events: none;
+}
+
+main #questions-box #question-answers .wrong .letter {
+    background-color: #D92B2B;
+    color: #F5F5F5;
+}
+
+main #questions-result {
+    text-align: center;
+}
+
+main #questions-result #percentage {
+    font-size: 60px;
+}
+
+main #questions-result button {
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
