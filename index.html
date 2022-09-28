@@ -9,7 +9,33 @@
 </head>
 <body>
 
-    <h1>Quiz - História da Programação</h1>
+    <header>
+        <h1>Quiz - História da Programação</h1>
+        <strong>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o">Fonte: Wikipédia</a>
+        </strong>
+    </header>
     
+    <main>
+        <div id="questions-box">
+            <div id="question-title">
+                <h3>Pergunta</h3>
+            </div>
+            <div id="question-answers">
+                <!-- Template -->
+                <div class="answer" correct-answer="false">
+                    <span class="letter">a</span> <span>Resposta</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="questions-result" class="hide">
+            <h3>Resultado:</h3>
+            <p><span id="percentage">50%</span></p>
+            <p>Você acertou <span id="qty-corrects">2</span> de <span id="qty-questions">4</span> perguntas.</p>
+            <button id="reset-quiz">Refazer Quiz</button>
+        </div>
+    </main>
+
 </body>
 </html>
